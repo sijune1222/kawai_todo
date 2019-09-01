@@ -49,7 +49,7 @@ export default class App extends React.Component{
             underlineColorAndroid={"transparent"}
           />
           <ScrollView contentContainerStyle={styles.toDos}> 
-            {Object.values(toDos).map(toDo => <ToDo key={toDo.id} 
+            {Object.values(toDos).reverse().map(toDo => <ToDo key={toDo.id} 
                                                     {...toDo} 
                                                     deleteToDo={this._deleteToDo}
                                                     uncompleteToDo={this._uncompleteToDo}
